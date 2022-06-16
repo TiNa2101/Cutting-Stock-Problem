@@ -21,17 +21,6 @@ with open('test4.txt', 'r') as test_4:
     details_length_4 = [int(i) for i in test_4.readline().split()]
     details_price_4 = [int(i) for i in test_4.readline().split()]
 
-L = 10
-details_length = [2, 3]
-details_price = [4, 7]
-
-#def Naive(L, details_length, details_price):
-#    n = len(details_length)
-#    profit = []
-#    length = []
-#    details_counter = [[0] for i in range(n)]
-#Naive(L, details_length, details_price)
-
 def Heuristic(L, details_length, details_price):
     n = len(details_length)
     profit = 0
