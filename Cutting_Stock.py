@@ -88,9 +88,6 @@ print("Details prices -  ", details_price_1, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_1, details_length_1, details_price_1)
 
-#for i in range(L_1 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
-
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_1])
 for i in range(len(details_length_1)):
@@ -111,9 +108,6 @@ print("Details lengths - ", details_length_2)
 print("Details prices -  ", details_price_2, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_2, details_length_2, details_price_2)
-
-#for i in range(L_2 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
 
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_2])
@@ -136,9 +130,6 @@ print("Details prices -  ", details_price_3, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_3, details_length_3, details_price_3)
 
-#for i in range(L_3 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
-
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_3])
 for i in range(len(details_length_3)):
@@ -159,9 +150,6 @@ print("Details lengths - ", details_length_4)
 print("Details prices -  ", details_price_4, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_4, details_length_4, details_price_4)
-
-#for i in range(L_4 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
 
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_4])
@@ -184,9 +172,6 @@ print("Details prices -  ", details_price_5, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_5, details_length_5, details_price_5)
 
-#for i in range(L_5 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
-
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_5])
 for i in range(len(details_length_5)):
@@ -202,7 +187,6 @@ for i in range(len(details_length_5)):
         print("Number of details of", i + 1, "type:", temp_details_counter[i])
 print()
 #==============================================================
-'''
 print("TEST 6:", '\n')
 print("INPUT DATA:")
 print("Length of initial material -", L_6)
@@ -210,9 +194,6 @@ print("Details lengths - ", details_length_6)
 print("Details prices -  ", details_price_6, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_6, details_length_6, details_price_6)
-
-#for i in range(L_6 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
 
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_6])
@@ -229,7 +210,6 @@ for i in range(len(details_length_6)):
         print("Number of details of", i + 1, "type:", temp_details_counter[i])
 print()
 #==============================================================
-'''
 print("TEST 7:", '\n')
 print("INPUT DATA:")
 print("Length of initial material -", L_7)
@@ -237,9 +217,6 @@ print("Details lengths - ", details_length_7)
 print("Details prices -  ", details_price_7, '\n')
 
 temp_profit, temp_details_counter, temp_detail_number = DP(L_7, details_length_7, details_price_7)
-
-#for i in range(L_7 + 1):
-#    print(i, temp_profit[i], temp_detail_number[i])
 
 print("Dynamic programming:")
 print("The profit of optimal cutting: ", temp_profit[L_7])
@@ -332,12 +309,12 @@ for i in range(100):
     t_stop = timeit.default_timer()
     time7_Heuristic += t_stop - t_start
 
-'''
+
 t_start = timeit.default_timer()
 DP(L_6, details_length_6, details_price_6)
 t_stop = timeit.default_timer()
 time6_DP += t_stop - t_start
-'''
+
 t_start = timeit.default_timer()
 DP(L_7, details_length_7, details_price_7)
 t_stop = timeit.default_timer()
